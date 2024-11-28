@@ -19,8 +19,7 @@
 
     <p onmouseover="mudaOTexto(this)">Um outro Texto</p>
 
-    <!--Evento onkeydown-->
-    <label for="">Cidades</label>
+    <!--Evento onkeydown-->    
     <input onkeydown="mostrarTecla(event)" type="text">
 
     <script>
@@ -29,6 +28,14 @@
         btnClick.addEventListener("click", () => {
             alert("BBBBBBBBBBBBBHH");
         });
+
+        btnClick.onmouseover = function() {
+            btnClick.style.background = "yellow";
+        }
+
+        btnClick.onmouseout = () => {
+            btnClick.style.background = "";
+        }
 
         function mudaOTexto(elemento) {
             elemento.innerText = "O mouse passou por aqui";
