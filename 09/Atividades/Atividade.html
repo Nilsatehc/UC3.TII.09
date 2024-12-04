@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo">Olá Mundo</h1>
+    <p id="texto">Primeiro Parágrafo</p>
+    <p id="texto">Segundo Parágrafo</p> 
+
+
+    <ul id="lista">
+        <li>item 1</li>
+        <li>item 2</li>
+    </ul>
+
+    <script>
+let lista = document.getElementById("lista")
+
+        //Criando um novo elemeto
+        let novoItem = document.createElement("li");
+        novoItem.innerText = "item 3"
+        lista.appendChild(novoItem)
+
+        
+        //Removendo um elemento
+        let primeiroItem = lista.firstElementChild;
+        primeiroItem.innerText = "Adeus Mundo";
+        lista.removeChild(primeiroItem);
+    </script>
+</body>
+</html>
