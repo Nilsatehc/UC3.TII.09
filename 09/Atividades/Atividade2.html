@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<body>
+    <h1 id="titulo">titulo</h1>
+    <p id="texto">paragrafo</p>
+    <button id="botao">botao</button>
+ 
+    <script>
+        const castlevania = document.getElementById("botao");
+ 
+        castlevania.addEventListener("click", function () {
+            let texto = document.getElementById("texto");
+            texto.innerText = "Olá, mundo!";
+ 
+            let novoTexto = document.createElement("p");
+            novoTexto.innerText = "my vibe"
+ 
+            texto.append(novoTexto)
+ 
+           
+        })
+ 
+    </script>
+    <br>
+    <h2> Segundo Exemplo</h2>
+    <p>Um parágrafo</p>
+    <button id="botao">Um botão</button>
+
+    <script>
+        const botao = document.getElementById("botao");
+
+        botao.onclick = function() {
+            document.querySelector("p").innerText = "Mudei o texto";
+            
+            document.querySelector("title").remove();
+
+            const novoElemento = document.createElement("hr");
+            document.querySelector("body").append(novoElemento);
+        }
+    </script>
+</body>
+ 
+</html>
+ 
