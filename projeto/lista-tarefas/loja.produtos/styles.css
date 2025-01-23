@@ -1,8 +1,9 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 20px;
 }
-.card{
+ 
+.card {
     width: 150px;
     height: 100px;
     text-align: center;
@@ -12,30 +13,45 @@ body{
     padding: 10px;
     cursor: pointer;
 }
-.container{
+ 
+.card.selecionado {
+    background-color: lightblue;
+    border-color: darkblue;
+}
+ 
+.container {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
+ 
 .botoes {
     margin-top: 20px;
 }
-
+ 
 .btn-comprar {
     background: darkgreen;
     color: white;
 }
-
+ 
 .btn-redefinir {
     background: red;
     color: white;
 }
+ 
 button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
-button:hover{
+ 
+button:hover {
     opacity: 0.8;
+}
+.resultado{
+    margin-top: 20px;
+    font-size: 32px;
+font-weight: bold;
+
 }

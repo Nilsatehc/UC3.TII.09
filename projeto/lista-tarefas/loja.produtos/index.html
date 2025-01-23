@@ -3,26 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos</title>
+    <title>Loja de Produtos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <H1>Produtos</H1>
-    <div>
-        <div class="card">Produto A</div>
-        <div>Preço: R$ 40</div>
-    </div>
-    <div>
-        <div class="card">Produto A</div>
-        <div>Preço: R$ 40</div>
-    </div>
-    <div>
-        <div class="card">Produto A</div>
-        <div>Preço: R$ 40</div>
+    <h1>Produtos</h1>
+
+    <div class="container">
+        <div class="card" data-preco="40">
+            <div>Produto A</div>
+            <div>Preço: R$ 40</div>
+        </div>
+        <div class="card" data-preco="60">
+            <div>Produto B</div>
+            <div>Preço: R$ 60</div>
+        </div>
+        <div class="card" data-preco="50">
+            <div>Produto C</div>
+            <div>Preço: R$ 50</div>
+        </div>
     </div>
     <div class="botoes">
         <button class="btn-comprar" id="btnComprar">Comprar</button>
         <button class="btn-redefinir" id="btnRedefinir">Redefinir</button>
     </div>
+<div id="resultado" class="resultado"></div>
+    <script src="script.js"></script>
 </body>
 </html>
